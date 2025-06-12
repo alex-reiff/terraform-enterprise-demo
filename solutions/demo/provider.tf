@@ -5,12 +5,10 @@
 provider "ibm" {
   ibmcloud_api_key = var.ibmcloud_api_key
   region           = var.region
-  #   visibility       = var.provider_visibility // DA only
 }
 
 data "ibm_iam_auth_token" "auth_token" {}
 
-# Null resource replaced with restapi_object to enable CSPM
 provider "restapi" {
   uri = var.ibmcloud_catalog_management_api_endpoint
   headers = {

@@ -1,0 +1,61 @@
+{
+    "products": [
+        {
+            "label": "Terraform Enterprise Demo",
+            "name": "terraform-enterprise-demo",
+            "product_kind": "solution",
+            "tags": [
+                "compute",
+                "Technology"
+            ],
+            "keywords": [
+                "terraform",
+                "tfe"
+            ],
+            "short_description": "This deployable architecture creates an instance of Terraform Enterprise.",
+            "long_description": "",
+            "provider_name": "Community",
+            "offering_docs_url": "https://github.com/alex-reiff/terraform-enterprise-demo",
+            "offering_icon_url": "https://cdn.worldvectorlogo.com/logos/terraform-enterprise.svg",
+            "features": [],
+            "flavors": [
+                {
+                    "label": "Demo",
+                    "name": "demo",
+                    "working_directory": "solutions/demo",
+                    "licenses": [
+                        {
+                            "id": "LICENSE",
+                            "name": "LICENSE",
+                            "type": "text/plain",
+                            "description": "LICENSE"
+                        }
+                    ],
+                    "compliance": {},
+                    "configuration": [
+                        {
+                            "key": "ibmcloud_api_key"
+                        },
+                        {
+                            "key": "terraform_enterprise_hostname"
+                        },
+                        {
+                            "key": "terraform_enterprise_instance_token"
+                        }
+                    ],
+                    "iam_permissions": [],
+                    "architecture": {
+                        "features": [],
+                        "diagrams": []
+                    },
+                    "release_notes_url": "",
+                    "terraform_version": "",
+                    "outputs": [],
+                    "install_type": "fullstack",
+                    "scripts": [],
+                    "change_notices": {}
+                }
+            ]
+        }
+    ]
+}
