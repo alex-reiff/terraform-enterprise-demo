@@ -17,7 +17,7 @@ variable "region" {
 variable "ibmcloud_catalog_management_api_endpoint" {
   type        = string
   description = "The catalog management API endpoint to use. Defaults to the public endpoint. [Learn more](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog#endpoint-url)"
-  default     = "https://cm.globalcatalog.cloud.ibm.com"
+  default     = "https://cm.globalcatalog.test.cloud.ibm.com"
 }
 
 variable "terraform_enterprise_engine_name" {
