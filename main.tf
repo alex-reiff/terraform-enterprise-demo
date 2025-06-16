@@ -51,7 +51,7 @@ resource "restapi_object" "tfe-engines" { //need to PUT all fields in the body, 
     terraform_engines = [
       {
         name : var.terraform_enterprise_engine_name
-        type           = "tfe"
+        type           = "terraform_enterprise"
         public_endoint = var.terraform_enterprise_hostname
         api_token      = var.terraform_enterprise_instance_token
         da_creation = {
