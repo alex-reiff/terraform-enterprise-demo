@@ -14,6 +14,18 @@
 # }
 
 # output "name3" {
+#   description = "Name of created SCC WP instance."
+#   value       = module.tfe-demo.name3
+#   sensitive   = true
+# }
+
+# output "name4" {
+#   description = "Name of created SCC WP instance."
+#   value       = module.tfe-demo.name4
+#   sensitive   = true
+# }
+
+# output "name_" {
 #   description = ""
 #   value       = data.ibm_iam_auth_token.auth_token
 # }

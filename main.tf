@@ -5,7 +5,6 @@ locals {
     id   = data.ibm_cm_account.cm_account.id
     _rev = data.ibm_cm_account.cm_account.rev
 
-    account_filters = data.ibm_cm_account.cm_account.account_filters
     terraform_engines = [
       {
         name : var.terraform_enterprise_engine_name
@@ -26,6 +25,11 @@ locals {
         }
       }
     ]
+
+    account_filters = {
+      include_all = data.ibm_cm_account.cm_account.account_filters[0].include_all,
+      id_filters  = data.ibm_cm_account.cm_account.account_filters[0].id_filters[0]
+    }
   }
 }
 
