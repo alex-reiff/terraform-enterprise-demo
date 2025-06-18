@@ -8,9 +8,9 @@ locals {
     terraform_engines = [
       {
         name : var.terraform_enterprise_engine_name
-        type           = "terraform_enterprise"
-        public_endoint = var.terraform_enterprise_hostname
-        api_token      = var.terraform_enterprise_instance_token
+        type            = "terraform_enterprise"
+        public_endpoint = var.terraform_enterprise_hostname
+        api_token       = var.terraform_enterprise_instance_token
         da_creation = {
           enabled = var.enable_automatic_deployable_architecture_creation
           # default_private_catalog_id = var.default_private_catalog_id
