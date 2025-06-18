@@ -41,6 +41,10 @@
                         },
                         {
                             "key": "terraform_enterprise_instance_token"
+                        },
+                        {
+                            "key": "ibmcloud_catalog_management_api_endpoint",
+                            "default": "https://cm.globalcatalog.test.cloud.ibm.com"
                         }
                     ],
                     "iam_permissions": [],

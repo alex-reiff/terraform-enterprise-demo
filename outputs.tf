@@ -3,7 +3,7 @@
 ########################################################################################################################
 # output "name" {
 #   description = "Name of created SCC WP instance."
-#   value       = local.catalog_account_boundary
+#   value       = data.ibm_cm_account.cm_account
 # }
 
 # output "name2" {

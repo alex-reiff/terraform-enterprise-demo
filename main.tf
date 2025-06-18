@@ -1,25 +1,11 @@
-resource "restapi_object" "catalog_info" { # get catalog content
-  path           = "/api/v1-beta/catalogaccount"
-  data           = ""
-  create_method  = "GET"
-  update_method  = "GET"
-  destroy_method = "GET"
-}
+data "ibm_cm_account" "cm_account" {}
 
 locals {
-  catalog_id               = restapi_object.catalog_info.api_data["id"]
-  catalog_revision         = restapi_object.catalog_info.api_data["_rev"]
-  catalog_account_boundary = restapi_object.catalog_info.api_data["account_boundary"]
-  catalog_account_filters  = restapi_object.catalog_info.api_data["account_filters"]
   data = {
-    id   = local.catalog_id
-    _rev = local.catalog_revision
+    id   = data.ibm_cm_account.cm_account.id
+    _rev = data.ibm_cm_account.cm_account.rev
 
-    # account_boundary = local.catalog_account_boundary
-    account_filters = {
-      include_all = true,
-      id_filters  = {}
-    }
+    account_filters = data.ibm_cm_account.cm_account.account_filters
     terraform_engines = [
       {
         name : var.terraform_enterprise_engine_name

@@ -12,3 +12,8 @@
 #   value       = module.tfe-demo.name2
 #   sensitive   = true
 # }
+
+# output "name3" {
+#   description = ""
+#   value       = data.ibm_iam_auth_token.auth_token
+# }
