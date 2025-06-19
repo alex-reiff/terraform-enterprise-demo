@@ -2,6 +2,11 @@
 # Outputs
 # #######################################################################################################################
 
+output "terraform_enterprise_hostname" {
+  description = "Hostname of the (newly created) Terraform Enterprise instance."
+  value       = module.tfe-demo.terraform_enterprise_hostname
+}
+
 # output "name" {
 #   description = "Name of created SCC WP instance."
 #   value       = module.tfe-demo.name

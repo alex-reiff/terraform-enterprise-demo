@@ -1,4 +1,4 @@
-# Basic example
+# Demo
 
 <!--
 The basic example should call the module(s) stored in this repository with a basic configuration.
@@ -6,6 +6,9 @@ Note, there is a pre-commit hook that will take the title of each example and in
 The text below should describe exactly what resources are provisioned / configured by the example.
 -->
 
-An end-to-end basic example that will provision the following:
-- A new resource group if one is not passed in.
-- A new standard plan Cloud Object Storage instance using the root level module.
+This Deployable Architecture (DA) is a demo showcasing Terraform Enterprise (TFE)functionality.
+
+As this is a demo, not all features are exposed in this DA.
+
+Currently this DA deploys the following:
+- Configure Global Catalog to use a pre-existing TFE instance for running Deployable Architectures

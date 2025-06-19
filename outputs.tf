@@ -1,6 +1,12 @@
 ########################################################################################################################
 # Outputs
 ########################################################################################################################
+
+output "terraform_enterprise_hostname" {
+  description = "Hostname of the (newly created) Terraform Enterprise instance."
+  value       = var.terraform_enterprise_hostname
+}
+
 # output "name" {
 #   description = "Name of created SCC WP instance."
 #   value       = data.ibm_cm_account.cm_account

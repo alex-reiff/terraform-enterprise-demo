@@ -43,8 +43,16 @@
                             "key": "terraform_enterprise_instance_token"
                         },
                         {
-                            "key": "ibmcloud_catalog_management_api_endpoint",
-                            "default": "https://cm.globalcatalog.test.cloud.ibm.com"
+                            "key": "terraform_enterprise_engine_name",
+                            "default": "tfe-demo"
+                        },
+                        {
+                            "key": "enable_automatic_deployable_architecture_creation",
+                            "default": false
+                        },
+                        {
+                            "key": "default_private_catalog_id",
+                            "default": null
                         }
                     ],
                     "iam_permissions": [],
