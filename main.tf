@@ -43,7 +43,7 @@ locals {
     terraform_engines = [
       {
         name            = var.terraform_enterprise_engine_name
-        type            = "terraform_enterprise"
+        type            = "terraform-enterprise"
         public_endpoint = var.terraform_enterprise_hostname
         api_token       = var.terraform_enterprise_instance_token
         da_creation = {

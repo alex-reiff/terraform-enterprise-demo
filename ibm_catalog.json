@@ -12,7 +12,7 @@
                 "terraform",
                 "tfe"
             ],
-            "short_description": "This deployable architecture creates an instance of Terraform Enterprise.",
+            "short_description": "This deployable architecture demo connects an instance of Terraform Enterprise to the global catalog account settings.",
             "long_description": "",
             "provider_name": "Community",
             "offering_docs_url": "https://github.com/alex-reiff/terraform-enterprise-demo",
